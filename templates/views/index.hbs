@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c85bd76b56.js" crossorigin="anonymous"></script>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="card">
+        
+            {{>sbar}}
+            
+        
+        <div class="weather">
+            
+            <hr><hr>
+            <h2 class="city">
+                    {{city}} 
+            </h2>
+            <div class="temp">
+                Temprature:{{temp}}°C 
+            </div>
+            <div class="box">
+                <img src="https://openweathermap.org/img/wn/{{icon}}@2x.png" alt="" class="icon">
+                <div class="description">
+                        {{description}} 
+                </div>
+            </div>
+            <div class="humidity">
+                    <h2>Humidity:{{humidity}}% </h2>
+            </div>
+            <div class="windSpeed">
+                <h2>Wind Speed:{{windSpeed}}Km/h</h2>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
