@@ -5,7 +5,7 @@ const hbs=require("hbs");
 const fetch=require("node-fetch");  // install "npm install node-fetch@2"
 //import fetch from 'node-fetch';  /// to use it write " "type":"module" " in package.json file
 
-const port=8000;
+const port= process.env.PORT || 8000;
 
 const views_path=path.join(__dirname,"../templates/views");
 const public_path=path.join(__dirname,"../public");
